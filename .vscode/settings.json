@@ -1,0 +1,13 @@
+{
+  // Use workspace typescript version
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  // Eslint
+  "prettier.enable": false,
+  "eslint.validate": ["json", "jsonc", "yaml", "yml", "markdown"],
+
+  // Stylelint
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss", "postcss", "vue"],
+}

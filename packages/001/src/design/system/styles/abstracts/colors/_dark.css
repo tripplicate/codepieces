@@ -1,0 +1,25 @@
+html,
+html.dark {
+  color-scheme: dark;
+  &:root {
+    /* Primary */
+    --sys-color-primary: #202225;
+    --sys-color-on-primary: #fafbf6;
+
+    /* Secondary */
+    --sys-color-secondary: #343531;
+    --sys-color-on-secondary: #fafbf6;
+
+    /* Outline */
+    --sys-color-outline: #fafbf6;
+    --sys-color-outline-variant: #f5f5f5;
+
+    /* Surface */
+    --sys-color-surface: #202225;
+    --sys-color-on-surface: #fafbf6;
+
+    /* Container */
+    --sys-color-container: #fafbf6;
+    --sys-color-on-container: #202225;
+  }
+}

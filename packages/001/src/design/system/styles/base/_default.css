@@ -1,0 +1,14 @@
+body {
+  font-family: var(--sys-font-family-primary), var(--sys-font-family-fallback);
+  color: var(--sys-color-on-surface);
+  background: var(--sys-color-surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
