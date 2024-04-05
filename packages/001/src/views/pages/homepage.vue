@@ -1,35 +1,18 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue';
 
-import {
-  Hero,
-  Awards,
-  AboutUs,
-  OurWork,
-  ContactUs,
-  OurExpertise,
-} from '~/modules/homepage';
+import { HeroSection } from '~/modules/homepage';
 
 useHead({
-  title: 'Homepage',
+  title: 'Creacy',
 });
 
 </script>
 
 <template>
   <main class="homepage">
-    <Hero />
-
-    <div class="homepage__wrapper">
-      <AboutUs />
-
-      <OurExpertise />
-
-      <OurWork />
-
-      <Awards />
-
-      <ContactUs />
+    <div class="homepage__hero-wrapper">
+      <HeroSection />
     </div>
   </main>
 </template>
@@ -39,8 +22,10 @@ useHead({
   display: flex;
   flex-flow: column;
 
-  &__wrapper, :deep(.hero), :deep(.hero__container) {
-    padding: 2rem;
+  &__hero-wrapper {
+    display: flex;
+    min-height: 100dvh;
+    padding: 2vw;
   }
 }
 </style>

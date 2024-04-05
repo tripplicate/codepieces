@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import type { routes } from './router';
+import type { routes } from './routes';
 
 type RouteNames<T extends RouteRecordRaw[], K extends RouteRecordRaw = T[number]> =
   K extends { children: RouteRecordRaw[], }

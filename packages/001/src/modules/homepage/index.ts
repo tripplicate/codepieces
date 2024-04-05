@@ -1,1 +1,1 @@
-export * from './components';
+export { default as HeroSection } from './components/HeroSection.vue';

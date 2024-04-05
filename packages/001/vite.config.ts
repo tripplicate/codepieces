@@ -11,6 +11,7 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
   },
+  cacheDir: './.cache/vite',
   resolve: {
     alias: {
       '~': fileURLToPath(new URL('src', import.meta.url)),
