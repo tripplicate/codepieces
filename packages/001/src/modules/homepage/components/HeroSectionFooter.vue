@@ -48,7 +48,6 @@
     font-weight: 500;
 
     background: hsla(0, 0%, 100%, 0.125);
-    backdrop-filter: blur(0.125vw);
     border: 0.0125vw solid white;
     border-radius: 2vw;
   }
@@ -56,6 +55,8 @@
 
 @media screen and (width < 768px) {
   .hero-footer {
+    height: unset;
+
     &__tags {
       flex: 1 0 auto;
       justify-content: space-between;

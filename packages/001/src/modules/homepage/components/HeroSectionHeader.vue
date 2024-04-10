@@ -95,8 +95,7 @@ const links = [
     padding-block: 0.75vw;
     padding-inline: 2vw;
 
-    background: hsl(220, 3%, 55%);
-    backdrop-filter: blur(0.0125vw);
+    background: hsla(220, 3%, 55%, 0.5);
     border-radius: 2vw;
   }
 

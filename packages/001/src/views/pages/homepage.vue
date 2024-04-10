@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useHead } from '@unhead/vue';
+import { useHeadSafe } from '@unhead/vue';
 
 import { HeroSection } from '~/modules/homepage';
 
-useHead({
+useHeadSafe({
   title: 'Creacy',
 });
 
@@ -24,7 +24,7 @@ useHead({
 
   &__hero-wrapper {
     display: flex;
-    min-height: 100dvh;
+    min-height: 100lvh;
     padding: 2vw;
   }
 }
