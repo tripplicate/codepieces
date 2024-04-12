@@ -1,0 +1,15 @@
+:root {
+  --sys-font-family-primary: sans-serif;
+  --sys-font-family-fallback:
+    system-ui,
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    roboto,
+    oxygen,
+    ubuntu,
+    cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
