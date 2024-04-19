@@ -1,0 +1,147 @@
+/* Container */
+
+.container {
+  width: min(1600px, 100% - 1.5rem);
+  margin-inline: auto;
+}
+
+/* Background overlay */
+
+.bg-overlay {
+  position: relative;
+
+  & * {
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+
+    opacity: 0.5;
+    background: var(--app-state-layer-on-surface-8);
+  }
+}
+
+/* Typography */
+
+.font-display {
+  font-family: var(--app-font-family-primary);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.font-display.font-typescale-large {
+  font-size: 23.75vw;
+}
+
+.font-headline {
+  font-family: var(--app-font-family-primary);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.font-headline.font-typescale-large {
+  font-size: clamp(2rem, 10vw, 4rem);
+  line-height: 1.25;
+}
+
+.font-headline.font-typescale-medium {
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+
+.font-headline.font-typescale-small {
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.font-title {
+  font-family: var(--app-font-family-primary);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.font-title.font-typescale-large {
+  font-size: 1.375rem;
+  line-height: 1.275;
+}
+
+.font-title.font-typescale-medium {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-title.font-typescale-small {
+  font-size: 0.875rem;
+  line-height: 1.425;
+}
+
+.font-body {
+  font-family: var(--app-font-family-primary);
+  font-weight: normal;
+}
+
+.font-body.font-typescale-large {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.font-body.font-typescale-medium {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.font-body.font-typescale-small {
+  font-size: 0.75rem;
+  line-height: 1.175;
+}
+
+.font-label {
+  font-family: var(--app-font-family-primary);
+  font-weight: 600;
+}
+
+.font-label.font-typescale-large {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-label.font-typescale-medium {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.font-label.font-typescale-small {
+  font-size: 0.75rem;
+  line-height: 1.875;
+}
+
+/* Button */
+
+.app-btn {
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+
+  background: none;
+  border: none;
+
+  transition: background-color 250ms, color 250ms, border 250ms, scale 150ms;
+}
+
+.app-btn:active:not(:disabled) {
+  scale: 0.98;
+}
+
+.app-btn:disabled {
+  pointer-events: none;
+  touch-action: none;
+}

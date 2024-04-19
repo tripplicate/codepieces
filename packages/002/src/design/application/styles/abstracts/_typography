@@ -1,6 +1,6 @@
 :root {
-  --sys-font-family-primary: sans-serif;
-  --sys-font-family-fallback:
+  --app-font-family-primary: "Open Sans", var(--app-font-family-fallback);
+  --app-font-family-fallback:
     system-ui,
     -apple-system,
     blinkmacsystemfont,
