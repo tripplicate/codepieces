@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 
 import App from './App.vue';
 
-import '~/design/system/styles/index.css';
+import '~/design/application/styles/index.css';
 
 import type { Extension } from './extensions';
 
