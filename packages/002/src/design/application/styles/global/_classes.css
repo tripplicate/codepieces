@@ -8,7 +8,10 @@
 /* Background overlay */
 
 .bg-overlay {
+  --overlay-color: var(--app-state-layer-on-surface-8);
+
   position: relative;
+  overflow: hidden;
 
   & * {
     z-index: 1;
@@ -22,7 +25,9 @@
     inset: 0;
 
     opacity: 0.5;
-    background: var(--app-state-layer-on-surface-8);
+    background-color: var(--overlay-color);
+
+    transition: background-color 250ms;
   }
 }
 

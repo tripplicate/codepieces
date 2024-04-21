@@ -19,7 +19,7 @@ const links = [
     isActive: false,
   },
   {
-    to: '#services',
+    to: '#services-section',
     text: 'Services',
     isActive: false,
   },

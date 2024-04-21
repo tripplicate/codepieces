@@ -41,7 +41,7 @@ import { AppHeader, AppIconButton } from '~/design/application/components';
 
 <style scoped>
 .hero {
-  --background-image: url("/images/hero-section-background.jpg");
+  --background-image: url("/images/landing/hero-background.jpg");
 
   position: relative;
 
