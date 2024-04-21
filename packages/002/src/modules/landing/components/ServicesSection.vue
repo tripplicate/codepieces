@@ -21,8 +21,13 @@ import { AppButton, AppIconButton } from '~/design/application/components';
         Our various agency services are provided for you
       </h3>
 
-      <section class="services__items">
-        <div class="bg-overlay services__item services__item--primary">
+      <section
+        class="services__items"
+        data-theme="dark"
+      >
+        <div
+          class="bg-overlay services__item services__item--primary"
+        >
           <h4 class="font-headline font-typescale-large">
             Design interior specializes in creating captivating
           </h4>
@@ -91,6 +96,7 @@ import { AppButton, AppIconButton } from '~/design/application/components';
     display: flex;
     flex-flow: row nowrap;
     gap: 1.5rem;
+    color: var(--app-color-on-surface);
   }
 
   &__item {
