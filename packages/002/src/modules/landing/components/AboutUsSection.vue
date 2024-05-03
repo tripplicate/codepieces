@@ -2,6 +2,8 @@
 
 import { AppButton } from '~/design/application/components';
 
+import SectionHeader from './SectionHeader.vue';
+
 let achievementsCards = [
   {
     title: '$920M+',
@@ -32,11 +34,9 @@ let achievementsCards = [
     id="about-us-section"
     class="about-us container"
   >
-    <header class="about-us__header">
-      <h2 class="font-title font-typescale-large about-us__header-title">
-        (02) About Us
-      </h2>
-    </header>
+    <SectionHeader>
+      (02) About Us
+    </SectionHeader>
 
     <section class="about-us__content">
       <h3 class="font-headline font-typescale-large about-us__title">

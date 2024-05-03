@@ -3,6 +3,8 @@ import { Icon } from '@iconify/vue';
 
 import { AppButton, AppIconButton } from '~/design/application/components';
 
+import SectionHeader from './SectionHeader.vue';
+
 </script>
 
 <template>
@@ -11,11 +13,9 @@ import { AppButton, AppIconButton } from '~/design/application/components';
     class="services"
   >
     <section class="container">
-      <header class="services__header">
-        <h2 class="font-title font-typescale-large services__header-title">
-          (03) Services
-        </h2>
-      </header>
+      <SectionHeader>
+        (03) Services
+      </SectionHeader>
 
       <h3 class="font-headline font-typescale-large services__title">
         Our various agency services are provided for you

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { AppButton } from '~/design/application/components';
 
+import SectionHeader from './SectionHeader.vue';
+
 const projects = [
   {
     name: 'YES HOUSE',
@@ -31,11 +33,9 @@ const projects = [
 
 <template>
   <section class="projects-section container">
-    <header class="projects-section__header">
-      <h2 class="font-title font-typescale-large projects-section__header-title">
-        (04) Our Projects
-      </h2>
-    </header>
+    <SectionHeader class="projects-section__header">
+      (04) Our Projects
+    </SectionHeader>
 
     <h3 class="font-headline font-typescale-large projects-section__title">
       The last various projects we have have been completed

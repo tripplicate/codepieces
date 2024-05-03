@@ -6,6 +6,7 @@ import {
   AboutUsSection,
   ServicesSection,
   ProjectsSection,
+  PropertySection,
 } from '~/modules/landing';
 
 useHead({
@@ -23,6 +24,8 @@ useHead({
     <ServicesSection />
 
     <ProjectsSection />
+
+    <PropertySection />
   </main>
 </template>
 
