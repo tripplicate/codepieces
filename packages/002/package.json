@@ -1,6 +1,5 @@
 {
   "name": "@piece/002",
-  "packageManager": "pnpm@8.15.5",
   "private": true,
   "type": "module",
   "scripts": {
