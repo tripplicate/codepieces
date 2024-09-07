@@ -2,16 +2,6 @@
   "name": "@piece/002",
   "private": true,
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "pnpm type:check && vite build",
-    "preview": "vite preview",
-    "type:check": "vue-tsc --noEmit",
-    "lint:eslint": "eslint '**/*.{js,jsx,cjs,mjs,ts,tsx,vue}' --fix --cache --cache-strategy=content --cache-location=.temp/.eslintcache --ignore-path=.gitignore",
-    "lint:stylelint": "stylelint './src/**/*.css' --fix --allow-empty-input --cache --cache-strategy=content --cache-location=.temp/.stylelintcache --ignore-path=.gitignore",
-    "lint:all": "pnpm lint:eslint && pnpm lint:stylelint",
-    "bundle-visualizer": "pnpm exec vite-bundle-visualizer -o .temp/bundle-stats.html"
-  },
   "dependencies": {
     "@iconify/vue": "^4.1.1",
     "@unhead/vue": "^1.8.20",

@@ -1,3 +1,0 @@
-{
-    "*.{js,jsx,ts,tsx,cjs,mjs,vue,json,yaml,yml,md}": "pnpm lint:eslint"
-}
