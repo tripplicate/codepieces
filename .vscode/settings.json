@@ -1,13 +1,32 @@
 {
   // Use workspace typescript version
   "typescript.tsdk": "node_modules/typescript/lib",
-
   // Eslint
-  "prettier.enable": false,
-  "eslint.validate": ["json", "jsonc", "yaml", "yml", "markdown"],
+    "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
 
+  "prettier.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+  ],
   // Stylelint
   "css.validate": false,
   "scss.validate": false,
-  "stylelint.validate": ["css", "scss", "postcss", "vue"],
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "postcss",
+    "vue"
+  ],
 }
