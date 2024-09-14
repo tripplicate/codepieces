@@ -1,10 +1,9 @@
 <script setup lang="ts">
+import { AppButton } from '~/design/application/components'
 
-import { AppButton } from '~/design/application/components';
+import SectionHeader from './SectionHeader.vue'
 
-import SectionHeader from './SectionHeader.vue';
-
-let achievementsCards = [
+const achievementsCards = [
   {
     title: '$920M+',
     subtitle: `
@@ -25,8 +24,8 @@ let achievementsCards = [
       <span>Total testimonials</span> they provide after
       experiencing our services
     `,
-  }
-];
+  },
+]
 </script>
 
 <template>
@@ -61,7 +60,7 @@ let achievementsCards = [
 
     <section class="about-us__achievements">
       <section
-        v-for="{title, subtitle} in achievementsCards"
+        v-for="{ title, subtitle } in achievementsCards"
         :key="title"
         class="about-us__achievements-card"
       >

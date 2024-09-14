@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { useHead } from '@unhead/vue';
+import { useHead } from '@unhead/vue'
 
 import {
-  HeroSection,
   AboutUsSection,
-  ServicesSection,
+  HeroSection,
   ProjectsSection,
   PropertySection,
-} from '~/modules/landing';
+  ServicesSection,
+} from '~/modules/landing'
 
 useHead({
   title: 'Arcspace',
-});
-
+})
 </script>
 
 <template>

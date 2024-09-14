@@ -1,3 +1,3 @@
-export { default as AppIconButton } from './AppIconButton.vue';
+export { default as AppIconButton } from './AppIconButton.vue'
 
-export * from './types';
+export * from './types'

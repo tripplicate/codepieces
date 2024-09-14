@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { AppButton } from '~/design/application/components';
+import { AppButton } from '~/design/application/components'
 
-import SectionHeader from './SectionHeader.vue';
+import SectionHeader from './SectionHeader.vue'
 
-let images = [
+const images = [
   {
     src: 'https://images.unsplash.com/photo-1581641363874-158d26798a62?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'white bed linen on brown wooden bed frame',
@@ -15,8 +15,8 @@ let images = [
   {
     src: 'https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'white bed linen on brown wooden bed frame',
-  }
-];
+  },
+]
 </script>
 
 <template>
@@ -24,7 +24,7 @@ let images = [
     <section class="container property-section__container">
       <section class="property-section__gallery">
         <picture
-          v-for="{alt, src} in images"
+          v-for="{ alt, src } in images"
           :key="src"
           class="property-section__gallery-picture"
         >

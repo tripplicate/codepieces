@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { AppButton } from '~/design/application/components';
+import { AppButton } from '~/design/application/components'
 
-import SectionHeader from './SectionHeader.vue';
+import SectionHeader from './SectionHeader.vue'
 
 const projects = [
   {
@@ -27,8 +27,8 @@ const projects = [
     background: 'https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'Located just steps from Kensington road, the YZ house renovation and addition blends the old and the new, higlight existing features',
     tags: ['interior', 'architect'],
-  }
-];
+  },
+]
 </script>
 
 <template>
@@ -46,12 +46,12 @@ const projects = [
       data-theme="dark"
     >
       <RouterLink
-        v-for="{name, description, tags, background} in projects"
+        v-for="{ name, description, tags, background } in projects"
         :key="name"
         to="#service"
         class="bg-overlay projects-section__project"
         :style="{
-          '--background-image': `url('${background}')`
+          '--background-image': `url('${background}')`,
         }"
       >
         <header class="projects-section__project-header">

@@ -1,9 +1,9 @@
-import { createPinia } from 'pinia';
+import { createPinia } from 'pinia'
 
-import { defineExtension } from '..';
+import { defineExtension } from '..'
 
 export default defineExtension({
   install(ctx) {
-    ctx.app.use(createPinia());
+    ctx.app.use(createPinia())
   },
-});
+})

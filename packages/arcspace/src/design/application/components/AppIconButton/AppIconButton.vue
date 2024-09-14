@@ -1,28 +1,31 @@
 <script setup lang="ts">
-import { toRefs, computed } from 'vue';
+import type { AppIconButtonProps } from './types'
 
-import type { AppIconButtonProps } from './types';
+import { computed, toRefs } from 'vue'
 
-let props = withDefaults(defineProps<AppIconButtonProps>(), {
+const props = withDefaults(defineProps<AppIconButtonProps>(), {
   htmlType: 'button',
   type: 'fill',
   shape: 'circle',
   width: 24,
-});
+})
 
-let {
-  htmlType, type, shape, width,
-} = toRefs(props);
+const {
+  htmlType,
+  type,
+  shape,
+  width,
+} = toRefs(props)
 
-let classes = computed(() => {
+const classes = computed(() => {
   return {
     'app-btn icon-btn font-label font-typescale-large': true,
     'icon-btn--fill': type.value === 'fill',
     'icon-btn--outline': type.value === 'outline',
     'icon-btn--rounded': shape.value === 'circle',
     'icon-btn--square': shape.value === 'square',
-  };
-});
+  }
+})
 </script>
 
 <template>

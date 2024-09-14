@@ -1,9 +1,9 @@
 <script setup lang='ts'>
-import { useHead } from '@unhead/vue';
+import { useHead } from '@unhead/vue'
 
 useHead({
   title: 'Page not found',
-});
+})
 </script>
 
 <template>

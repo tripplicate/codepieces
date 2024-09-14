@@ -1,21 +1,21 @@
-import { createApp } from 'vue';
+import type { Extension } from './extensions'
 
-import App from './App.vue';
+import { createApp } from 'vue'
 
-import '~/design/application/styles/index.css';
+import App from './App.vue'
 
-import type { Extension } from './extensions';
+import '~/design/application/styles/index.css'
 
-const app = createApp(App);
+const app = createApp(App)
 
-const extensions = Object.values(import.meta.glob<{ default: Extension, }>('./extensions/*/index.ts', {
+const extensions = Object.values(import.meta.glob<{ default: Extension }>('./extensions/*/index.ts', {
   eager: true,
-}));
+}))
 
 extensions.forEach((extension) => {
   extension.default.install({
     app,
-  });
-});
+  })
+})
 
-app.mount('#root');
+app.mount('#root')

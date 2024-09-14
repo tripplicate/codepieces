@@ -1,11 +1,10 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 
-import { Icon } from '@iconify/vue';
+import { useApplicationStore } from '~/app'
+import { AppButton } from '~/design/application/components'
 
-import { useApplicationStore } from '~/app';
-import { AppButton } from '~/design/application/components';
-
-const applicationStore = useApplicationStore();
+const applicationStore = useApplicationStore()
 
 const links = [
   {
@@ -27,8 +26,8 @@ const links = [
     to: '#contact',
     text: 'Contact',
     isActive: false,
-  }
-];
+  },
+]
 </script>
 
 <template>
@@ -48,11 +47,11 @@ const links = [
         class="main-header__navigation-list"
       >
         <li
-          v-for="{to, text, isActive} in links"
+          v-for="{ to, text, isActive } in links"
           :key="to"
           class="main-header__navigation-item"
           :class="{
-            'main-header__navigation-item--active': isActive
+            'main-header__navigation-item--active': isActive,
           }"
         >
           <RouterLink

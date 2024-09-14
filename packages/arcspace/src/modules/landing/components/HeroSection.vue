@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
+import { Icon } from '@iconify/vue'
 
-import { AppHeader, AppIconButton } from '~/design/application/components';
+import { AppHeader, AppIconButton } from '~/design/application/components'
 </script>
 
 <template>
@@ -116,5 +116,4 @@ import { AppHeader, AppIconButton } from '~/design/application/components';
     }
   }
 }
-
 </style>

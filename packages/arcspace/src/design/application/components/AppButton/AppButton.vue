@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { toRefs, computed } from 'vue';
+import type { AppButtonProps } from './types'
 
-import type { AppButtonProps } from './types';
+import { computed, toRefs } from 'vue'
 
-let props = withDefaults(defineProps<AppButtonProps>(), {
+const props = withDefaults(defineProps<AppButtonProps>(), {
   htmlType: 'button',
   type: 'fill',
   iconPosition: 'left',
@@ -11,14 +11,14 @@ let props = withDefaults(defineProps<AppButtonProps>(), {
     disabled: false,
     loading: false,
   }),
-});
+})
 
-let {
+const {
   htmlType,
   type,
   state,
   width,
-} = toRefs(props);
+} = toRefs(props)
 
 const classes = computed(() => {
   return {
@@ -29,8 +29,8 @@ const classes = computed(() => {
     'btn--loading': state.value?.loading,
     'btn--width-auto': width.value === 'auto',
     'btn--width-max': width.value === 'max',
-  };
-});
+  }
+})
 </script>
 
 <template>

@@ -1,9 +1,9 @@
-import { disableCache } from '@iconify/vue';
+import { disableCache } from '@iconify/vue'
 
-import { defineExtension } from '..';
+import { defineExtension } from '..'
 
 export default defineExtension({
   install() {
-    disableCache('all');
+    disableCache('all')
   },
-});
+})

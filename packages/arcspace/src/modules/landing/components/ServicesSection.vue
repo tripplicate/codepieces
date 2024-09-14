@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
+import { Icon } from '@iconify/vue'
 
-import { AppButton, AppIconButton } from '~/design/application/components';
+import { AppButton, AppIconButton } from '~/design/application/components'
 
-import SectionHeader from './SectionHeader.vue';
-
+import SectionHeader from './SectionHeader.vue'
 </script>
 
 <template>

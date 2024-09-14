@@ -1,21 +1,21 @@
-import { join } from 'node:path';
-import { URL, fileURLToPath } from 'node:url';
+import { join } from 'node:path'
+import { fileURLToPath, URL } from 'node:url'
 
-import ViteVuePlugin from '@vitejs/plugin-vue';
-import PostcssAutoprefixerPlugin from 'autoprefixer';
-import PostcssNestedPlugin from 'postcss-nested';
-import { loadEnv, defineConfig } from 'vite';
-import { compression as ViteCompressionPlugin } from 'vite-plugin-compression2';
+import ViteVuePlugin from '@vitejs/plugin-vue'
+import PostcssAutoprefixerPlugin from 'autoprefixer'
+import PostcssNestedPlugin from 'postcss-nested'
+import { defineConfig, loadEnv } from 'vite'
+import { compression as ViteCompressionPlugin } from 'vite-plugin-compression2'
 
-const TEMP_DIR = '.temp';
-const CACHE_DIR = '.vite';
+const TEMP_DIR = '.temp'
+const CACHE_DIR = '.vite'
 
 export default defineConfig(({ mode }) => {
   const {
     VITE_HOST,
     VITE_PORT,
     VITE_PROXY_ADDR,
-  } = loadEnv(mode, '.', 'VITE');
+  } = loadEnv(mode, '.', 'VITE')
 
   return {
     envPrefix: 'CLIENT',
@@ -43,7 +43,7 @@ export default defineConfig(({ mode }) => {
           PostcssAutoprefixerPlugin({
             env: mode,
           }),
-          PostcssNestedPlugin()
+          PostcssNestedPlugin(),
         ],
       },
     },
@@ -51,7 +51,7 @@ export default defineConfig(({ mode }) => {
       ViteVuePlugin(),
       ViteCompressionPlugin({
         algorithm: 'brotliCompress',
-      })
+      }),
     ],
-  };
-});
+  }
+})
