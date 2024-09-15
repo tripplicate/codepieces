@@ -2,6 +2,13 @@
   "name": "@workspace/arcspace",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type:check \"build:only {@}\" --",
+    "preview": "vite preview",
+    "build:only": "vite build",
+    "type:check": "vue-tsc --build --force"
+  },
   "dependencies": {
     "@iconify/vue": "^4.1.1",
     "@unhead/vue": "^1.8.20",
@@ -16,7 +23,9 @@
     "@types/node": "^20.11.28",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/tsconfig": "^0.5.1",
+    "@workspace/configs": "workspace:^1.0.0",
     "autoprefixer": "^10.4.19",
+    "npm-run-all2": "^6.2.3",
     "postcss-nested": "^6.0.1",
     "stylelint": "^16.2.1",
     "typescript": "~5.4.3",

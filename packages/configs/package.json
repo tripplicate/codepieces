@@ -1,0 +1,29 @@
+{
+  "name": "@workspace/configs",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./eslint": {
+      "types": "./dist/eslint/index.d.ts",
+      "import": "./dist/eslint/index.mjs"
+    },
+    "./tsconfig/*": {
+      "default": "./dist/tsconfig/*"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^3.6.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.11.28",
+    "@vue/tsconfig": "^0.5.1"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
+}
