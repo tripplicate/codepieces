@@ -1,4 +1,0 @@
-{
-  "extends": "@workspace/configs/tsconfig/tsconfig.node.json",
-  "include": ["vite.config.*"]
-}

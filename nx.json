@@ -3,15 +3,7 @@
   "defaultBase": "main",
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "type:check"]
     }
-  },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "eslint"
-      }
-    }
-  ]
+  }
 }
