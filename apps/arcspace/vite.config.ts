@@ -1,4 +1,3 @@
-import { join } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 
 import ViteVuePlugin from '@vitejs/plugin-vue'

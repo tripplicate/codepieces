@@ -1,7 +1,7 @@
-# Codepiece 002
+# Arcspace
 
-<img src="./docs/banner.png" />
+<img src="./docs/banner.png" alt="Превью посадочной страницы" />
 
-## Overview
+## Описание
 
-- Deployment: https://codepieces-002.vercel.app/
+- 🔎 [Ссылка на демо](https://arcspace-two.vercel.app/)
